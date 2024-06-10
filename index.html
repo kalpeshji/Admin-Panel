@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Tocly - Admin & Dashboard Template</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="asset/images/favicon.png">
+    <!-- font -->
+    <link rel="stylesheet" href="asset/font/stylesheet.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <!-- remix-icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- slick-slider
+     <link rel="stylesheet" href="asset/css/slick.css">
+     <link rel="stylesheet" href="asset/css/slick-theme.css"> -->
+    <!-- plugin css -->
+    <link href="asset/jsVectorMap/css/jsvectormap.min.css" rel="stylesheet" type="text/css" />
+    <!-- css -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- media -->
+    <link rel="stylesheet" href="asset/css/media.css">
+
+</head>
+
+<body>
+    <div class="setting-bg"></div>
+    <!-- Header Start -->
+
+    <header>
+        <div class="all-content justify-between d-flex flex-wrap align-center">
+            <div class="navbar-brand-box d-flex flex-wrap">
+                <div class="bar">
+                    <i class="ri-menu-2-line"></i>
+                </div>
+                <h4>Dashboard</h4>
+            </div>
+            <div class="content d-flex flex-wrap align-center">
+                <!-- <form action="" class="app-search">
+                    <input type="text" class="form-control" placeholder="Search..">
+                    <span class="ri-search-line"></span>
+                </form> -->
+                <div class="searchBar align-center d-flex">
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search..">
+                    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+                <div class="contry">
+                    <img src="asset/images/contry-1.jpg" alt="">
+                </div>
+                <div class="nav-icon">
+                    <i class="ri-apps-2-line app-icon"></i>
+                    <i class="ri-fullscreen-line"></i>
+                    <i class="ri-notification-line notification-icon"></i>
+                </div>
+                <i class="ri-settings-2-line setting-icon"></i>
+            </div>
+        </div>
+        <!-- <div class="all-content-second justify-between d-flex flex-wrap align-center">
+            <div class="navbar-brand-box d-flex flex-wrap">
+                <div class="bar1">
+                    <i class="ri-menu-2-line"></i>
+                </div>
+                <h4>Dashboard</h4>
+            </div>
+            <div class="content d-flex flex-wrap align-center">
+                <div class="searchBar align-center d-flex">
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search..">
+                    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                        <i class="ri-search-line"></i>
+                    </button>
+                </div>
+                <i class="ri-apps-2-line"></i>
+                <i class="ri-fullscreen-line"></i>
+                <i class="ri-notification-line"></i>
+                <i class="ri-settings-2-line"></i>
+            </div>
+        </div> -->
+    </header>
+
+    <!-- Header End -->
+    <!-- scroll -->
+    <!-- <a href="#" id="scroll" style="display: none;"></a> -->
+    <!-- scroll -->
+    <!-- setting start-->
+    <div class="setting">
+        <div class="title d-flex flex-wrap align-center justify-between">
+            <div class="name">
+                <h4>Setting</h4>
+            </div>
+            <div class="cut-option">
+                <i class="ri-close-line close"></i>
+            </div>
+        </div>
+        <div class="user-use justify-center">
+            <div class="user-image">
+                <img src="asset/images/user-me.jpg" alt="">
+            </div>
+            <p>Change Profile Photo <i class="ri-edit-2-fill"></i></p>
+            <div class="log-out d-flex justify-between">
+                <button><a href="login.html">Log out</a></button>
+                <button>Delete Account</button>
+            </div>
+        </div>
+        <h6>Choose Layout</h6>
+        <div class="items">
+            <div class="mode-light">
+                <img src="asset/images/mode-1.jpg" alt="">
+                <h5>Light Mode</h5>
+            </div>
+            <div class="mode-dark">
+                <img src="asset/images/mode-2.jpg" alt="">
+                <h5>Dark Mode</h5>
+            </div>
+        </div>
+    </div>
+    <!-- setting end -->
+
+    <!-- aside Start -->
+    <aside>
+        <div class="aside-big">
+            <div class="logo d-flex flex-wrap align-center justify-between">
+                <div class="image">
+                    <img src="asset/images/logo.png" alt="logo">
+                </div>
+                <div class="premium">
+                    <h4>PREMIUM</h4>
+                </div>
+            </div>
+            <div class="menus">
+                <div class="user-dropdown d-flex flex-wrap align-center">
+                    <div class="w-3">
+                        <div class="user-firstletter">
+                            <h5>R</h5>
+                        </div>
+                    </div>
+                    <div class="w-8">
+                        <h6> Reporting </h6>
+                        <p class="work"> Team Reporting </p>
+                    </div>
+                    <i class="ri-arrow-down-s-fill"></i>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="menu-title">
+                            <h4>MENU</h4>
+                        </li>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-chat-2-fill"></i></span>Dashboard <div
+                                    class="notification">3</div>
+                            </li>
+                        </a>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-chat-3-fill"></i></span>Apps<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Email</li>
+                                </a>
+                                <div class="set">
+                                    <ul>
+                                        <a href="javascript:void(0);">
+                                            <li>Inbox</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Read Email</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <a href="javascript:void(0);">
+                                    <li>Calender</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Chat</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>File Manager</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Invoice</li>
+                                </a>
+                                <div class="set">
+                                    <ul>
+                                        <a href="javascript:void(0);">
+                                            <li>Invoices</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Invoice Details</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <a href="javascript:void(0);">
+                                    <li>Users</li>
+                                </a>
+                                <div class="set">
+                                    <ul>
+                                        <a href="javascript:void(0);">
+                                            <li>Users List</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Users Detail</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-layout-2-fill"></i></span>Layouts<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Vertical</li>
+                                </a>
+                                <div class="set">
+                                    <ul>
+                                        <a href="javascript:void(0);">
+                                            <li>Dark Sidebar</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Light Sidebar</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Compact Sidebar</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Icon Sidebar</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Boxed Layout</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Preloader</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <a href="javascript:void(0);">
+                                    <li>Horizontal</li>
+                                </a>
+                                <div class="set">
+                                    <ul>
+                                        <a href="javascript:void(0);">
+                                            <li>Horizontal</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Light Header</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Topbar Dark</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Boxed width</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Preloader</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul>
+                        <li class="menu-title">
+                            <h4>PAGES</h4>
+                        </li>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-arrow-left-circle-fill"></i></span>Authentication<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Login</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Register</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Recover Passwort</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Lock Screen</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="main-menu align-center">
+                            <li><span class="list-logo"><i class="ri-file-add-line"></i></span>Extra Pages<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Starter Page</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Maintenance</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Coming Soon</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Error 404</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Error 500</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>(Help Center)FAQ</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Profile</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Pricing</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Terms & Conditions</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </ul>
+                    <ul>
+                        <li class="menu-title">
+                            <h4>COMPONENTS</h4>
+                        </li>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-stack-fill"></i></span>UI Elements<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Alerts</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Buttons</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Cards</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Carousel</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Dropdowns</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Grid</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Images</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Lightbox</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Modals</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Offcavas</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Range Slider</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Round Slider</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Session Timeout</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Progress Bars</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Sweetalert 2</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Tabs & Accrodions</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Typography</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Video</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>General</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Rating</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Notifications</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-article-line"></i></span>Forms <div
+                                    class="notification-2">6</div>
+                            </li>
+                        </a>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-grid-line"></i></span>Tables<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Bootstrap Table</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Data Table</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Editable Table</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-pie-chart-fill"></i></span>Charts<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Apexcharts Part1<i class="ri-arrow-drop-down-line drp"></i></li>
+                                </a>
+                                <div class="set">
+                                    <ul>
+                                        <a href="javascript:void(0);">
+                                            <li>Line</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Area</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Column</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Bar</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Mixed</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Timeline</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Candlestick</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Boxplot</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <a href="javascript:void(0);">
+                                    <li>Apexcharts Part2<i class="ri-arrow-drop-down-line drp"></i></li>
+                                </a>
+                                <div class="set">
+                                    <ul>
+                                        <a href="javascript:void(0);">
+                                            <li>Bubble</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Scatter</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Heatmap</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Treemap</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Pie</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Radialbar</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>Rader</li>
+                                        </a>
+                                        <a href="javascript:void(0);">
+                                            <li>polararea</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <a href="javascript:void(0);">
+                                    <li>E Chart</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-checkbox-multiple-blank-fill"></i></span>Icons<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Remix Icons</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Material Design</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Unicons</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-map-pin-add-fill"></i></span>Maps<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Google Maps</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Vector Maps</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="javascript:void(0);" class="main-menu">
+                            <li><span class="list-logo"><i class="ri-medal-2-fill"></i></span>Multi Level<i
+                                    class="ri-arrow-drop-down-line drp"></i></li>
+                        </a>
+                        <div class="menu-set">
+                            <ul>
+                                <a href="javascript:void(0);">
+                                    <li>Level 1.1</li>
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <li>Level 1.2</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="user d-flex flex-wrap align-center">
+                <div class="w-3">
+                    <div class="user-first">
+                        <img src="asset/images/user-me.jpg" alt="">
+                    </div>
+                </div>
+                <div class="w-7">
+                    <h6> Kalpesh Gupta </h6>
+                </div>
+                <div class="w-1">
+                    <i class="ri-more-2-line"></i>
+                </div>
+            </div>
+
+            <!-- <div class="menus">
+            <ul>
+                <li></li>
+            </ul>
+        </div> -->
+            <div class="logo2 align-center">
+                <div class="logo2image">
+                    <img src="asset/images/logo-click.png" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class="aside-small">
+            <div class="logo d-flex flex-wrap align-center justify-between">
+                <div class="image">
+                    <img src="asset/images/logo-click.png" alt="logo">
+                </div>
+            </div>
+            <div class="menu-small">
+                <ul>
+                    <li class=" menu-icon m1"><i class="ri-chat-2-fill"></i></li>
+                    <li class=" menu-icon m2"><i class="ri-chat-3-fill"></i></li>
+                    <li class=" menu-icon m3"><i class="ri-layout-2-fill"></i></li>
+                    <li class=" menu-icon m4"><i class="ri-arrow-left-circle-fill"></i></li>
+                    <li class=" menu-icon m5"><i class="ri-file-add-line"></i></li>
+                    <li class=" menu-icon m6"><i class="ri-stack-fill"></i></li>
+                    <li class=" menu-icon m7"><i class="ri-article-line"></i></li>
+                    <li class=" menu-icon m8"><i class="ri-grid-line"></i></li>
+                    <li class=" menu-icon m9"><i class="ri-pie-chart-fill"></i></li>
+                    <li class=" menu-icon m10"><i class="ri-checkbox-multiple-blank-fill"></i></li>
+                    <li class=" menu-icon m11"><i class="ri-map-pin-add-fill"></i></li>
+                    <li class=" menu-icon m12"><i class="ri-medal-2-fill"></i></i></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!-- aside End -->
+
+    <!-- page-content Start -->
+    <div class="page-content">
+        <div class="aside-small-hover1">
+            <h4>Dashboard</h4>
+        </div>
+        <div class="aside-small-hover2">
+            <h4>Apps</h4>
+        </div>
+        <div class="aside-small-hover3">
+            <h4>Layouts</h4>
+        </div>
+        <div class="aside-small-hover4">
+            <h4>Authentication</h4>
+        </div>
+        <div class="aside-small-hover5">
+            <h4>Extra Pages</h4>
+        </div>
+        <div class="aside-small-hover6">
+            <h4>UI Elements</h4>
+        </div>
+        <div class="aside-small-hover7">
+            <h4>Forms</h4>
+        </div>
+        <div class="aside-small-hover8">
+            <h4>Tables</h4>
+        </div>
+        <div class="aside-small-hover9">
+            <h4>Charts</h4>
+        </div>
+        <div class="aside-small-hover10">
+            <h4>Icons</h4>
+        </div>
+        <div class="aside-small-hover11">
+            <h4>Maps</h4>
+        </div>
+        <div class="aside-small-hover12">
+            <h4>Multi Level</h4>
+        </div>
+        <div class="card-body card d-flex flex-wrap">
+            <div class="w-10">
+                <div class="align-center d-flex flex-wrap">
+                    <div class="w-3">
+                        <div class="card-icon">
+                            <i class="ri-briefcase-2-fill"></i>
+                        </div>
+                    </div>
+                    <div class="w-9">
+                        <span class="pro-los"> Total Earnings</span>
+                        <h3>34,123 <span>USD</span></h3>
+                        <p class="inc align-center"><i class="ri-arrow-right-up-line"></i> 2.8% Increase</p>
+                        <span> vs last month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-2">
+                <div class="more">
+                    <i class="ri-more-2-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card-body1 card d-flex flex-wrap">
+            <div class="w-10">
+                <div class="align-center d-flex flex-wrap">
+                    <div class="w-3">
+                        <div class="card-icon">
+                            <i class="ri-stack-fill"></i>
+                        </div>
+                    </div>
+                    <div class="w-9">
+                        <span class="pro-los"> Total Orders</span>
+                        <h3>63,234 <span>NOU</span></h3>
+                        <p class="dec align-center"><i class="ri-arrow-left-down-line"></i> 7.8% Loss</p>
+                        <span> vs last month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-2">
+                <div class="more">
+                    <i class="ri-more-2-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card-body2 card d-flex flex-wrap">
+            <div class="w-10">
+                <div class="align-center d-flex flex-wrap">
+                    <div class="w-3">
+                        <div class="card-icon">
+                            <i class="ri-image-fill"></i>
+                        </div>
+                    </div>
+                    <div class="w-9">
+                        <span class="pro-los"> Today Visitor</span>
+                        <h3>425,34 <span>NOU</span></h3>
+                        <p class="inc align-center"><i class="ri-arrow-right-up-line"></i> 4.6% Growth</p>
+                        <span> vs last month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-2">
+                <div class="more">
+                    <i class="ri-more-2-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="card-body3 card d-flex flex-wrap ">
+            <div class="w-10">
+                <div class="align-center d-flex flex-wrap">
+                    <div class="w-3">
+                        <div class="card-icon">
+                            <i class="ri-chat-2-fill"></i>
+                        </div>
+                    </div>
+                    <div class="w-9">
+                        <span class="pro-los"> Total Expense</span>
+                        <h3>26,482 <span>USD</span></h3>
+                        <p class="inc align-center"><i class="ri-arrow-right-up-line"></i> 23% Increase</p>
+                        <span> vs last month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-2">
+                <div class="more">
+                    <i class="ri-more-2-line"></i>
+                </div>
+            </div>
+        </div>
+        <div class="chart">
+            <div class="audiences-Metrics-chart d-flex flex-wrap  justify-between">
+                <div class="w-12">
+                    <div class="heading d-flex flex-wrap justify-between">
+                        <h4>Audiences Metrics</h4>
+                        <div class="buttons">
+                            <button>ALL</button>
+                            <button>1M</button>
+                            <button>6M</button>
+                            <button class="year">1Y</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-12">
+                    <div class="charts d-flex flex-wrap align-center">
+                        <div class="w-8 w-lg-12">
+                            <div id="chart1"></div>
+                        </div>
+                        <div class="w-4 w-lg-12">
+                            <div id="chart2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="live-user-by-country d-flex flex-wrap">
+            <div class="w-12">
+                <div class="heading d-flex flex-wrap justify-between">
+                    <h4>Live User By Country</h4>
+                    <div class="buttons">
+                        <button class="year">Export Report</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-12">
+                <div id="maps"></div>
+            </div>
+        </div>
+        <div class="purchase">
+            <div class="w-12">
+                <div class="heading d-flex flex-wrap justify-between align-center">
+                    <h4>Source of Purchases</h4>
+                    <div class="sortby">
+                        <h5>Sort by :</h5>
+                        <span class="sort-pur-dropdown">Yearly <i class="ri-arrow-drop-down-line drp"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-12">
+                <div id="purchase-chart"></div>
+                <p>Magnis dis parturient montes nascetur ridiculus tincidunt lobortis.</p>
+                <div class="d-flex flex-wrap justify-between">
+                    <div class="w-4">
+                        <div class="progress">
+                            <div class="progress-bar1"></div>
+                            <div class="topic-name">
+                                <h5>E-COMMERCE</h5>
+                            </div>
+                            <div class="points">
+                                <h4>52,524</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-4">
+                        <div class="progress">
+                            <div class="progress-bar2"></div>
+                            <div class="topic-name">
+                                <h5>FACEBOOK</h5>
+                            </div>
+                            <div class="points">
+                                <h4>48,625</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-4">
+                        <div class="progress">
+                            <div class="progress-bar3"></div>
+                            <div class="topic-name">
+                                <h5>INSTAGRAM</h5>
+                            </div>
+                            <div class="points">
+                                <h4>85,745</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sort">
+                <div class="sort-type">
+                    Yearly
+                </div>
+                <div class="sort-type">
+                    Monthly
+                </div>
+                <div class="sort-type">
+                    Weekly
+                </div>
+                <div class="sort-type">
+                    Today
+                </div>
+            </div>
+        </div>
+        <div class="sales">
+            <div class="w-12">
+                <div class="heading d-flex flex-wrap justify-between">
+                    <h4>Sales Statistics</h4>
+                    <div class="sortby">
+                        <span class="sort-sale-dropdown">Today <i class="ri-arrow-drop-down-line drp"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-12">
+                <h4>725,800</h4>
+                <div class="increment d-flex flex-wrap align-center">
+                    <div class="inc"><i class="ri-arrow-up-line"></i> 15.72%</div>
+                    <h5>vs. previous month</h5>
+                </div>
+                <div class="progres"></div>
+                <div class="record">
+                    <table width="100%" cellpadding="12px">
+                        <thead>
+                            <tr>
+                                <th>Order Status</th>
+                                <th>Orders</th>
+                                <th>Returns</th>
+                                <th>Earnings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Product Pending</td>
+                                <td>17,351</td>
+                                <td>2,123</td>
+                                <td>
+                                    <div class="active"><i class="ri-arrow-up-line"></i> 45.3%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Product Pending</td>
+                                <td>17,351</td>
+                                <td>2,123</td>
+                                <td>
+                                    <div class="dec"><i class="ri-arrow-down-line"></i> 45.3%</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Product Pending</td>
+                                <td>17,351</td>
+                                <td>2,123</td>
+                                <td>
+                                    <div class="active"><i class="ri-arrow-up-line"></i> 45.3%</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="view-more1">
+                    <button>View More</button>
+                </div>
+            </div>
+            <div class="sort1">
+                <div class="sort-type">
+                    Yearly
+                </div>
+                <div class="sort-type">
+                    Monthly
+                </div>
+                <div class="sort-type">
+                    Weekly
+                </div>
+                <div class="sort-type">
+                    Today
+                </div>
+            </div>
+        </div>
+        <div class="top-users d-flex flex-wrap">
+            <div class="w-12">
+                <div class="heading d-flex flex-wrap justify-between">
+                    <h4>Top Users</h4>
+                    <div class="sortby">
+                        <h5>Sort by :</h5>
+                        <span class="sort-user-dropdown">Yearly <i class="ri-arrow-drop-down-line drp"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-12">
+                <div class="top-user">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="avtar">
+                                        <img src="asset/images/avtar-3.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="name">
+                                        Neal Matthews
+                                    </div>
+                                    <div class="email-id">
+                                        glennholden@tocly.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <p>$325</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="dec">Completed</p>
+                                </td>
+                                <td><i class="ri-more-2-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="avtar">
+                                        <img src="asset/images/avatar-4.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="name">
+                                        Neal Matthews
+                                    </div>
+                                    <div class="email-id">
+                                        glennholden@tocly.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <p>$325</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td><i class="ri-more-2-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="avtar">
+                                        <img src="asset/images/avatar-5.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="name">
+                                        Neal Matthews
+                                    </div>
+                                    <div class="email-id">
+                                        glennholden@tocly.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-arrow-trend-down"></i>
+                                        <p>$640</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="active">Completed</p>
+                                </td>
+                                <td><i class="ri-more-2-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="avtar">
+                                        <img src="asset/images/avtar-2.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="name">
+                                        Neal Matthews
+                                    </div>
+                                    <div class="email-id">
+                                        glennholden@tocly.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <p>$325</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td><i class="ri-more-2-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="avtar">
+                                        <img src="asset/images/avtar-1.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="name">
+                                        Neal Matthews
+                                    </div>
+                                    <div class="email-id">
+                                        glennholden@tocly.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <p>$325</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td><i class="ri-more-2-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="avtar">
+                                        <img src="asset/images/avtar-2.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="name">
+                                        Neal Matthews
+                                    </div>
+                                    <div class="email-id">
+                                        glennholden@tocly.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <p>$325</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td><i class="ri-more-2-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="avtar">
+                                        <img src="asset/images/avatar-6.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="name">
+                                        Neal Matthews
+                                    </div>
+                                    <div class="email-id">
+                                        glennholden@tocly.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <p>$325</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td><i class="ri-more-2-fill"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="avtar">
+                                        <img src="asset/images/avatar-4.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="name">
+                                        Neal Matthews
+                                    </div>
+                                    <div class="email-id">
+                                        glennholden@tocly.com
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                        <p>$325</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td><i class="ri-more-2-fill"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="sort2">
+                <div class="sort-type">
+                    Yearly
+                </div>
+                <div class="sort-type">
+                    Monthly
+                </div>
+                <div class="sort-type">
+                    Weekly
+                </div>
+                <div class="sort-type">
+                    Today
+                </div>
+            </div>
+        </div>
+        <div class="transactions">
+            <div class="w-12">
+                <div class="heading d-flex flex-wrap justify-between">
+                    <h4>Latest Transaction</h4>
+                    <div class="sortby">
+                        <h5>Sort by :</h5>
+                        <span class="sort-trans-dropdown">Yearly <i class="ri-arrow-drop-down-line drp"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-12">
+                <div class="trans-action">
+                    <table width="100%" cellpadding="20">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox"></th>
+                                <th>Order ID</th>
+                                <th>Billing Name</th>
+                                <th>IP Address</th>
+                                <th>Order Date</th>
+                                <th>Total</th>
+                                <th>Payment Method</th>
+                                <th>Payment Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#MB2540</td>
+                                <td>
+                                    <div class="d-flex align-center">
+                                        <div class="avtar">
+                                            <img src="asset/images/avtar-3.jpg" alt="">
+                                        </div>
+                                        <span>Neal Matthews</span>
+                                    </div>
+                                </td>
+                                <td>cs562xf452dd</td>
+                                <td>07 Oct, 2022</td>
+                                <td>$400</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <i class="fa-brands fa-cc-mastercard"></i>Mastercard
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td>
+                                    <div class="transaction-btn d-flex">
+                                        <button class="btn-1"><i class="ri-pencil-fill"></i></button>
+                                        <button class="btn-2"><i class="ri-delete-bin-2-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#MB2540</td>
+                                <td>
+                                    <div class="d-flex align-center">
+                                        <div class="avtar">
+                                            <img src="asset/images/avtar-3.jpg" alt="">
+                                        </div>
+                                        <span>Neal Matthews</span>
+                                    </div>
+                                </td>
+                                <td>cs562xf452dd</td>
+                                <td>07 Oct, 2022</td>
+                                <td>$400</td>
+                                <td><i class="fa-brands fa-cc-visa"></i>Mastercard</td>
+                                <td>
+                                    <p class="dec">Cancel</p>
+                                </td>
+                                <td>
+                                    <div class="transaction-btn d-flex">
+                                        <button class="btn-1"><i class="ri-pencil-fill"></i></button>
+                                        <button class="btn-2"><i class="ri-delete-bin-2-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#MB2540</td>
+                                <td>
+                                    <div class="d-flex align-center">
+                                        <div class="avtar">
+                                            <img src="asset/images/avtar-3.jpg" alt="">
+                                        </div>
+                                        <span>Neal Matthews</span>
+                                    </div>
+                                </td>
+                                <td>cs562xf452dd</td>
+                                <td>07 Oct, 2022</td>
+                                <td>$400</td>
+                                <td><i class="fa-brands fa-cc-paypal"></i>Mastercard</td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td>
+                                    <div class="transaction-btn d-flex">
+                                        <button class="btn-1"><i class="ri-pencil-fill"></i></button>
+                                        <button class="btn-2"><i class="ri-delete-bin-2-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#MB2540</td>
+                                <td>
+                                    <div class="d-flex align-center">
+                                        <div class="avtar">
+                                            <img src="asset/images/avtar-3.jpg" alt="">
+                                        </div>
+                                        <span>Neal Matthews</span>
+                                    </div>
+                                </td>
+                                <td>cs562xf452dd</td>
+                                <td>07 Oct, 2022</td>
+                                <td>$400</td>
+                                <td><i class="fa-brands fa-cc-mastercard"></i>Mastercard</td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td>
+                                    <div class="transaction-btn d-flex">
+                                        <button class="btn-1"><i class="ri-pencil-fill"></i></button>
+                                        <button class="btn-2"><i class="ri-delete-bin-2-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#MB2540</td>
+                                <td>
+                                    <div class="d-flex align-center">
+                                        <div class="avtar">
+                                            <img src="asset/images/avtar-3.jpg" alt="">
+                                        </div>
+                                        <span>Neal Matthews</span>
+                                    </div>
+                                </td>
+                                <td>cs562xf452dd</td>
+                                <td>07 Oct, 2022</td>
+                                <td>$400</td>
+                                <td><i class="fa-brands fa-cc-visa"></i>Mastercard</td>
+                                <td>
+                                    <p class="premium">Shipping</p>
+                                </td>
+                                <td>
+                                    <div class="transaction-btn d-flex">
+                                        <button class="btn-1"><i class="ri-pencil-fill"></i></button>
+                                        <button class="btn-2"><i class="ri-delete-bin-2-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>#MB2540</td>
+                                <td>
+                                    <div class="d-flex align-center">
+                                        <div class="avtar">
+                                            <img src="asset/images/avtar-3.jpg" alt="">
+                                        </div>
+                                        <span>Neal Matthews</span>
+                                    </div>
+                                </td>
+                                <td>cs562xf452dd</td>
+                                <td>07 Oct, 2022</td>
+                                <td>$400</td>
+                                <td><i class="fa-brands fa-cc-paypal"></i>Mastercard</td>
+                                <td>
+                                    <p class="inc">Completed</p>
+                                </td>
+                                <td>
+                                    <div class="transaction-btn d-flex">
+                                        <button class="btn-1"><i class="ri-pencil-fill"></i></button>
+                                        <button class="btn-2"><i class="ri-delete-bin-2-fill"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="sort3">
+                <div class="sort-type">
+                    Yearly
+                </div>
+                <div class="sort-type">
+                    Monthly
+                </div>
+                <div class="sort-type">
+                    Weekly
+                </div>
+                <div class="sort-type">
+                    Today
+                </div>
+            </div>
+        </div>
+        <div class="language">
+            <div class="lang-type">
+                <div class="lang-img">
+                    <img src="asset/images/contry.jpg" alt="">
+                </div>
+                <div class="lang-name">Spanish</div>
+            </div>
+            <div class="lang-type">
+                <div class="lang-img">
+                    <img src="asset/images/contry-2.jpg" alt="">
+                </div>
+                <div class="lang-name">German</div>
+            </div>
+            <div class="lang-type">
+                <div class="lang-img">
+                    <img src="asset/images/contry-3.jpg" alt="">
+                </div>
+                <div class="lang-name">Italian</div>
+            </div>
+            <div class="lang-type">
+                <div class="lang-img">
+                    <img src="asset/images/contry-4.jpg" alt="">
+                </div>
+                <div class="lang-name">Russian</div>
+            </div>
+        </div>
+        <div class="apps">
+            <div class="d-flex flex-wrap">
+                <div class="w-4">
+                    <div class="apps-item justify-center">
+                        <div class="app-img">
+                            <img src="asset/images/app-1.png" alt="">
+                        </div>
+                        <div class="app-name"><span>Github</span></div>
+                    </div>
+                </div>
+                <div class="w-4">
+                    <div class="apps-item">
+                        <div class="app-img">
+                            <img src="asset/images/app-2.png" alt="">
+                        </div>
+                        <div class="app-name"><span>Bitbucket</span></div>
+                    </div>
+                </div>
+                <div class="w-4">
+                    <div class="apps-item">
+                        <div class="app-img">
+                            <img src="asset/images/app-3.png" alt="">
+                        </div>
+                        <div class="app-name"><span>Dribble</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="w-4">
+                    <div class="apps-item">
+                        <div class="app-img">
+                            <img src="asset/images/app-4.png" alt="">
+                        </div>
+                        <div class="app-name"><span>Dropbox</span></div>
+                    </div>
+                </div>
+                <div class="w-4">
+                    <div class="apps-item">
+                        <div class="app-img">
+                            <img src="asset/images/app-5.png" alt="">
+                        </div>
+                        <div class="app-name"><span>Mail Chimp</span></div>
+                    </div>
+                </div>
+                <div class="w-4">
+                    <div class="apps-item">
+                        <div class="app-img">
+                            <img src="asset/images/app-6.png" alt="">
+                        </div>
+                        <div class="app-name"><span>Slack</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="notification-section">
+            <div class="title d-flex flex-wrap justify-between align-center">
+                <div class="heading">
+                    <h4>Notifications</h4>
+                </div>
+                <div class="view-all-btn">
+                    <button>View All</button>
+                </div>
+            </div>
+            <div class="notification-item">
+                <div class="items d-flex flex-wrap">
+                    <div class="w-2">
+                        <div class="noti-img">
+                            <i class="ri-shopping-cart-line"></i>
+                        </div>
+                    </div>
+                    <div class="w-10">
+                        <h4 class="notification-title">Your order is placed</h4>
+                        <p class="notification-dsc">If several languages coalesce the grammar</p>
+                        <p><i class="ri-time-line"></i> 3 min ago</p>
+                    </div>
+                </div>
+                <div class="items d-flex flex-wrap">
+                    <div class="w-2">
+                        <div class="noti-img">
+                            <img src="asset/images/avtar-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="w-10">
+                        <h4 class="notification-title">Your order is placed</h4>
+                        <p class="notification-dsc">If several languages coalesce the grammar</p>
+                        <p><i class="ri-time-line"></i> 3 min ago</p>
+                    </div>
+                </div>
+                <div class="items d-flex flex-wrap">
+                    <div class="w-2">
+                        <div class="noti-img">
+                            <i class="ri-checkbox-circle-line"></i>
+                        </div>
+                    </div>
+                    <div class="w-10">
+                        <h4 class="notification-title">Your order is placed</h4>
+                        <p class="notification-dsc">If several languages coalesce the grammar</p>
+                        <p><i class="ri-time-line"></i> 3 min ago</p>
+                    </div>
+                </div>
+                <div class="items d-flex flex-wrap">
+                    <div class="w-2">
+                        <div class="noti-img">
+                            <img src="asset/images/avtar-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="w-10">
+                        <h4 class="notification-title">Your order is placed</h4>
+                        <p class="notification-dsc">If several languages coalesce the grammar</p>
+                        <p><i class="ri-time-line"></i> 3 min ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <p><i class="ri-arrow-right-circle-fill"></i>View More..
+                <p>
+            </div>
+        </div>
+    </div>
+    <footer class="d-flex flex-wrap align-center">
+        <div class="w-6">
+            <p>2023 © Tocly.</p>
+        </div>
+        <div class="w-6">
+            <p class="crafted">Crafted with ❤️ by Kalpesh gupta</p>
+        </div>
+    </footer>
+    <!-- page-content End -->
+
+
+    <!-- jQuery -->
+    <script src="asset/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- Vector map-->
+    <script src="asset/jsVectorMap/js/jsvectormap.min.js"></script>
+    <script src="asset/jsVectorMap/map/world-merc.js"></script>
+    <script src="asset/js/dashboard.init.js"></script>
+
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>
